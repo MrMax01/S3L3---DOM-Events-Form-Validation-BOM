@@ -39,11 +39,15 @@ section div button {
 section div {
   background-color: gray;
   border-bottom: 1px solid white;
+  cursor: pointer;
 }
 section div:first-child {
   margin-top: 2em;
 }
 
+.done {
+  text-decoration: line-through;
+}
 section div button:hover {
   background-color: white;
   color: darkred;

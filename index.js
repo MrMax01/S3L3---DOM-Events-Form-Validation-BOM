@@ -31,3 +31,15 @@ function deleteTODO(i) {
   todoList.splice(i, 1);
   list();
 }
+
+/* linetrough */
+const allList = document.querySelectorAll("section div");
+allList.forEach((elem) => {
+  elem.addEventListener("click", (event) => {
+    event.id.add(index);
+    console.log(event.id);
+    event.target.classList.toggle("done");
+  });
+});
+
+function taskDONE(i) {}
