@@ -37,7 +37,7 @@ section div button {
   margin: 0;
 }
 section div {
-  background-color: lightgray;
+  background-color: gray;
   border-bottom: 1px solid white;
 }
 section div:first-child {
@@ -48,4 +48,8 @@ section div button:hover {
   background-color: white;
   color: darkred;
   border: 2px solid darkred;
+}
+
+section div:hover {
+  background-color: lightgray;
 }
