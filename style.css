@@ -1,0 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+section div p {
+  display: inline-block;
+}
