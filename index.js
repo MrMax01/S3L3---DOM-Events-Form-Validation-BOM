@@ -33,6 +33,6 @@ function deleteTODO(i) {
 }
 
 function lineDone(clickEvent) {
-  console.log(clickEvent.target);
+  // console.log(clickEvent.target);
   clickEvent.target.classList.toggle("done");
 }
