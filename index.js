@@ -5,7 +5,7 @@ const list = () => {
   for (let i = 0; i < todoList.length; i++) {
     todoListHTML += `
         <div>
-        <p>${todoList[i]}</p>
+        <p onclick="lineDone(event)">${todoList[i]}</p>
         <button class="js-delete-btn" onclick ="deleteTODO(${i})">Delete</button>
         </div>`;
   }
@@ -32,14 +32,7 @@ function deleteTODO(i) {
   list();
 }
 
-/* linetrough */
-const allList = document.querySelectorAll("section div");
-allList.forEach((elem) => {
-  elem.addEventListener("click", (event) => {
-    event.id.add(index);
-    console.log(event.id);
-    event.target.classList.toggle("done");
-  });
-});
-
-function taskDONE(i) {}
+function lineDone(clickEvent) {
+  console.log(clickEvent.target);
+  clickEvent.target.classList.toggle("done");
+}

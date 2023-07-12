@@ -45,7 +45,7 @@ section div:first-child {
   margin-top: 2em;
 }
 
-.done {
+p.done {
   text-decoration: line-through;
 }
 section div button:hover {
